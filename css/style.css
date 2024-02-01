@@ -8,9 +8,7 @@ body {
     user-select: none;
     overflow: hidden;
   }
-  #canvas {
-    width: 100%;
-  }
+
   #title {
     color: #d5dce0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

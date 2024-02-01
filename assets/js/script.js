@@ -9,15 +9,10 @@ window.mobileAndTabletCheck = function() {
   return check;
 };
 
-var heightRatio = 0.514;
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
 
-if (window.mobileAndTabletCheck()) {
-  heightRatio = 2.17;
-  document.getElementById('title').style.left = '18%';
-  document.getElementById('title').style.fontSize = '3em';
-}
 
-canvas.height = canvas.width * heightRatio;
 
 webGLFluidEnhanced.simulation(canvas, {
   CURL: 0,
@@ -27,11 +22,6 @@ webGLFluidEnhanced.simulation(canvas, {
 });
 
 // Cool color palette: ['#cc211b', '#f1c593', '#e87e54', '#f193a7', '#ec6fa9']
-
-document.addEventListener('load', function (event){
-  document.getElementById('color-palette').value = '["#cc211b", "#f1c593", "#e87e54", "#f193a7", "#ec6fa9"]';
-  document.getElementById('curl').value = '0';
-});
 
 const canvasLayer = document.getElementById("canvas");
 const ctx = canvasLayer.getContext("2d");
