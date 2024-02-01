@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+  }
+  #canvas {
+    width: 100%;
+  }
+  #title {
+    color: #d5dce0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size:5em;
+  }
+  #name {
+    color: #d5dce0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size:5em;
+  }
+  #info {
+    color: #d5dce0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size:2em;
+  }
+
+  input {
+    width: 100px;
+    background-color: #161b22;
+    color: #79c0ff;
+    border: none;
+    border-bottom: 1px solid #d5dce0;
+    font-size: 14px;
+  }
